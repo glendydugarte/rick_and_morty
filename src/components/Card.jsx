@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function Card({name, species, gender, image, onClose, id}) {
    return (
-      <div>  
-          <button onClick = {()=> onClose(id)}>X</button>
+      <div >  
+          <button className= "botonX" onClick = {()=> onClose(id)}>X</button>
+         
           <Link to={`/detail/${id}`} >
          <h2>{name}</h2>
          </Link>

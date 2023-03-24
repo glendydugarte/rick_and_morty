@@ -11,10 +11,10 @@ export default function SearchBar(props) {
 
    }
    return (
-      <div>
+      <div className= "componenteSeach">
          
-        <input onChange = {handleChange} type='search' />
-         <button onClick={()=> props.onSearch(id)}> Agregar </button> 
+        <input className= "barra"onChange = {handleChange} type='search' />
+         <button className="botonAgregar" onClick={()=> props.onSearch(id)}> Agregar </button> 
 
       </div>
       

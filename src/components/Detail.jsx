@@ -23,13 +23,15 @@ export default function Detail() {
 
   return (
     <div>
-      <h1> Detalles del Personaje</h1>
-      {character.name && <p>Nombre: {character.name}</p>}
-      {character.status && <p>Status: {character.status}</p>}
-      {character.species && <p>Specie: {character.species}</p>}
-      {character.gender && <p>Gender: {character.gender}</p>}
-      {character.origin && <p>Origin: {character.origin.name}</p>}
-      {character.image && <img src={character.image} alt=""/>}
+        <div>
+      <h1 className="details"> Detalles del Personaje</h1>
+      {character.name && <p className= "dtName">Nombre: {character.name}</p>}
+      {character.status && <p className="dtStatus">Status: {character.status}</p>}
+      {character.species && <p className="dtSpecie">Specie: {character.species}</p>}
+      {character.gender && <p className="dtGender">Gender: {character.gender}</p>}
+      {character.origin && <p className="dtOrigin">Origin: {character.origin.name}</p>}
+      </div>
+      {character.image && <img className="cardPersonaje"src={character.image} alt=""/>}
     </div>
   )
 }

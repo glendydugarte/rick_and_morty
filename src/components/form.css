@@ -1,0 +1,144 @@
+.formulario {
+    width: 50%;
+    border: 2px solid rgb(115, 36, 226);
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+.login{
+    background-color: rgb(187, 155, 218);
+    padding-bottom: 200px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid rgb(120, 73, 212);
+}
+
+.nav{
+    padding-top: 40px;
+}
+
+.botonAbout { 
+    background-color: #ccc;
+color: #fff;
+width: 100px;
+padding: 10px;
+border: 1px solid #000;
+border-radius: 5px;
+margin-right: 10px ;
+    
+}
+
+.barra{
+    border:5px;
+    border-radius: 3px;
+    margin: 0auto;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+    margin-top: 70px;
+    padding: 5px;}
+
+    .botonAgregar{
+        background-color: #ccc;
+color: #fff;
+width: 100px;
+padding: 5px;
+border: 1px solid #000;
+border-radius: 5px;
+margin-left: 10px;
+
+    }
+
+   .botonX{
+    background-color: #ccc;
+color: #fff;
+width: 100px;
+padding: 5px;
+border: 1px solid #000;
+border-radius: 5px;
+margin-left: 10px;
+margin-top: 20px;
+
+   }
+
+   h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    color: rgb(1, 1, 1);
+    background-color: none;
+    font-size: 30px;
+   
+   }
+.details{
+    background-color: rgb(77, 65, 79);
+    width: 60%;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(232, 159, 237)
+}
+   .container{
+    background-color: rgb(246, 232, 246);
+    border: solid palevioletred 5px;
+    border-radius: 15px;
+    padding: 50px;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 40px;
+   }
+
+   .dtName, .dtStatus, .dtSpecie, .dtGender, .dtOrigin{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color:rgb(203, 96, 201);
+    font-style:inherit;
+    
+   }
+
+   .cardPersonaje {
+    border-radius: 30px;
+   }
+
+
+
+.botonHome{
+    background-color: #ccc;
+color: #fff;
+width: 100px;
+padding: 10px;
+border: 1px solid #000;
+border-radius: 5px;
+margin-left: 10px;
+}
+
+.submit{
+    background-color: #ccc;
+color: #fff;
+width: 100px;
+padding: 10px;
+border: 1px solid #000;
+border-radius: 5px;
+        
+}
+
+.password {
+    border:5px;
+    border-radius: 3px;
+    margin: 0auto;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px;
+  
+
+}
+
+.email {
+    border:5px;
+    border-radius: 3px;
+    margin: 0auto;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+    margin-top: 70px;
+    padding: 5px;
+}
