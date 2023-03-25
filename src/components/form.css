@@ -1,13 +1,17 @@
 .formulario {
-    width: 50%;
-    border: 2px solid rgb(115, 36, 226);
+    width: 90%;
+    border: 2px solid rgb(234, 231, 239);
     border-radius: 5px;
     margin-left: 100px;
+    background-image: url("https://images3.alphacoders.com/812/thumbbig-812062.webp");
+   padding: 100px;
+   display: flex;
 }
 
 .login{
-    background-color: rgb(187, 155, 218);
-    padding-bottom: 200px;
+    background-color: rgb(148, 40, 255);
+  
+    padding-bottom: 100px;
     width: 300px;
     margin: 0 auto;
     margin-top: 20px;
@@ -19,7 +23,7 @@
 }
 
 .botonAbout { 
-    background-color: #ccc;
+    background-color: #7994ff;
 color: #fff;
 width: 100px;
 padding: 10px;
@@ -39,7 +43,7 @@ margin-right: 10px ;
     padding: 5px;}
 
     .botonAgregar{
-        background-color: #ccc;
+        background-color: #7994ff;
 color: #fff;
 width: 100px;
 padding: 5px;
@@ -50,7 +54,7 @@ margin-left: 10px;
     }
 
    .botonX{
-    background-color: #ccc;
+    background-color: #7994ff;
 color: #fff;
 width: 100px;
 padding: 5px;
@@ -78,15 +82,37 @@ margin-top: 20px;
     font-family: 'Courier New', Courier, monospace;
     color:rgb(232, 159, 237)
 }
-   .container{
-    background-color: rgb(246, 232, 246);
-    border: solid palevioletred 5px;
-    border-radius: 15px;
-    padding: 50px;
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 40px;
-   }
+
+.image{
+
+width: 60%;
+padding: 30px;}
+
+.presentacionCard{
+border-radius: 10px;
+background-color: slateblue;
+max-width: 30%;
+max-height: 5%;
+margin: 0 auto;
+margin-top: 20px;
+margin-left: 20px;
+padding: 10px;
+display: inline-block
+
+
+
+}
+.name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.infoName{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+
 
    .dtName, .dtStatus, .dtSpecie, .dtGender, .dtOrigin{
     font-size: 20px;
@@ -104,7 +130,7 @@ margin-top: 20px;
 
 
 .botonHome{
-    background-color: #ccc;
+    background-color:  #7994ff;
 color: #fff;
 width: 100px;
 padding: 10px;
@@ -114,7 +140,7 @@ margin-left: 10px;
 }
 
 .submit{
-    background-color: #ccc;
+    background-color:  #7994ff;
 color: #fff;
 width: 100px;
 padding: 10px;
