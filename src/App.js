@@ -8,6 +8,7 @@ import About from './views/About';
 import Detail from './components/Detail';
 import Form from './components/Form';
 import { useEffect } from 'react';
+import Favorites from './components/Favorites';
 
 
 function App() {
@@ -63,6 +64,7 @@ if (userData.password === PASSWORD && userData.username === EMAIL) {
             <Route path="/home" element={<Cards characters={characters} onClose={onClose} />} />
             <Route path="/detail/:id" element={<Detail />} />
             <Route path="/about" element={<About />} />
+            <Route path="/favorites" element={<Favorites/>} />
          </Routes>
       </div>
    )
