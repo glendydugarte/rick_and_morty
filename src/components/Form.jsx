@@ -6,12 +6,12 @@ import "./form.css";
 export default function Form({ Login }) {
 
   const [userData, setUserData] = useState({
-    username: "",
+   email: "",
     password: "",
   });
 
   const [errors, setErrors] = useState({
-    username: "",
+   email: "",
     password: ""
   });
 
@@ -32,9 +32,9 @@ export default function Form({ Login }) {
     <div className = "formulario">
       <form className = "login" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="username" > Email </label>
-          <input className= "email"type="text" name="username" value={userData.username} onChange={handleChange} ></input>
-          <p className= "error">{errors.username}</p>
+          <label htmlFor="email" > Email </label>
+          <input className= "email"type="text" name="email" value={userData.email} onChange={handleChange} ></input>
+          <p className= "error">{errors.email}</p>
         </div>
 
         <div>

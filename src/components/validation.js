@@ -3,17 +3,17 @@
 
 const validation = (userData, errors, setErrors) => {
 
-    if (!userData.username)
-        setErrors(oldErrors=>({...oldErrors, username: "el nombre de usuario no puede estar vacío" }))
+    if (!userData.email)
+        setErrors(oldErrors=>({...oldErrors, email: "el nombre de usuario no puede estar vacío" }))
 
-    else if (userData.username.length > 35)
-        setErrors(oldErrors=>({ ...oldErrors, username: "el nombre de usuario no puede tener más de 35 caracteres." }))
+    else if (userData.email.length > 35)
+        setErrors(oldErrors=>({ ...oldErrors, email: "el nombre de usuario no puede tener más de 35 caracteres." }))
 
     else if (
-        !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(userData.username)) {
-        setErrors(oldErrors=>({...oldErrors, username: "el nombre de usuario tiene que ser un email" }))
+        !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(userData.email)) {
+        setErrors(oldErrors=>({...oldErrors, email: "el nombre de usuario tiene que ser un email" }))
     } else {
-        setErrors(oldErrors=>({...oldErrors, username: "" }))
+        setErrors(oldErrors=>({...oldErrors, email: "" }))
     }
 
     if (userData.password.length< 6 || userData.password.length > 10) {

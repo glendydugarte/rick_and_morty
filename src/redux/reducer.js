@@ -10,15 +10,12 @@ const rootReducer = (state = inicialState, action) => {
     switch (action.type) {
         case ADD_FAV:
             return {
-                ...state, myFavorites: [...state.allCharacters, action.payload],
-                ...state, allCharacters: [...state.allCharacters, action.payload]
+                ...state, myFavorites: action.payload, allCharacters: action.payload 
             };
 
         case REMOVE_FAV:
             return {
-                ...state, myFavorites:
-                    state.allCharacters.filter((char) => char.id !== action.payload),
-                ...state, allCharacters: [...state.allCharacters, action.payload]
+                ...state, myFavorites: action.payload 
             };
         case RESET:
             return {
@@ -40,7 +37,7 @@ const rootReducer = (state = inicialState, action) => {
                             return "Ascendente" === action.payload ? 1 : -1;
                         }
                         if (a.id < b.id) {
-                            return "Descendente" === action.payload ? -1 : 1;
+                            return "Descendente" === action.payload ? 1 : -1;
                         }
                         return 0;
                     })
