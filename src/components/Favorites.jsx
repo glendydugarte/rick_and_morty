@@ -1,14 +1,18 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Card from './Card';
-import { useDispatch } from 'react-redux';
-import { orderCards, filterCards } from '../redux/actions';
+import { orderCards, filterCards, removeFav, reset } from '../redux/actions';
 import { useState } from 'react';
 
-const Favorites = () => {
+const Favorites = ({onClose}) => {
     const favorites = useSelector((state)=> state.myFavorites);
     const dispatch = useDispatch();
     const [aux, setAux] = useState(false);
 
+    
+  function closeFav(id) {
+      onClose(id)
+      dispatch(removeFav(id));
+    }
    const handleOrder = (e)=>{
     e.preventDefault()
     dispatch(orderCards(e.target.value))
@@ -19,6 +23,11 @@ const Favorites = () => {
       e.preventDefault()
       dispatch(filterCards(e.target.value))
       }
+    
+    function resetBtton() {
+      dispatch(reset())
+    }
+
 
   return (
     <div>
@@ -32,21 +41,23 @@ const Favorites = () => {
       <option value="Genderless">Genderless</option>
       <option value="unknown">unknown</option>
       </select>
-        { favorites.map(({id, name, species, gender, image,})=> { 
+      <button onClick={resetBtton}> Restart </button>
+        { favorites.map(({id, name, species, gender, image})=> { 
             return ( 
                  <Card    
-                    key={id}
+                    key = {id}
                     id ={id}
                     name ={name}
                     species={species}
                     gender={gender}
                     image={image}
+                    onClose = {()=>{closeFav(id)}}
                     
                   />
                   ); 
                     }) }
     </div>
   );
-};
+}
 
 export default Favorites;

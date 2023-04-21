@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css';
 import Cards from './components/Cards';
 import Nav from './components/Nav';
 import axios from 'axios';
@@ -54,7 +53,7 @@ function App() {
 
    return (
       <div className='App'>
-         {location.pathname !== "/" ? <Nav onSearch={onSearch} /> : ""}
+         {location.pathname !== "/" ? < Nav onSearch={onSearch} /> : ""}
 
 
          <Routes>
@@ -66,9 +65,10 @@ function App() {
          </Routes>
       </div>
    )
-
-
 }
+
+
+
 
 
 export default App;

@@ -6,7 +6,7 @@ export default function Cards({characters, onClose}) {
    return ( 
    <div>
             {
-            characters.map(({name,species,gender,image, id})=> {
+            characters && characters.map(({name,species,gender,image, id})=> {
             return <Card
                key={id}
                name = {name}

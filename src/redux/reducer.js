@@ -34,7 +34,7 @@ const rootReducer = (state = inicialState, action) => {
                 ...state, myFavorites:
                     state.allCharacters.sort((a, b) => {
                         if (a.id > b.id) {
-                            return "Ascendente" === action.payload ? 1 : -1;
+                            return "Ascendente" === action.payload ? 1 : -1
                         }
                         if (a.id < b.id) {
                             return "Descendente" === action.payload ? 1 : -1;
